@@ -5,90 +5,107 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingBottom="50dp">
+
             <ImageView
                 android:id="@+id/profile_img"
                 android:layout_width="240dp"
                 android:layout_height="240dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/border"
+                android:padding="3dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:srcCompat="@tools:sample/avatars"
-                android:layout_marginTop="40dp"
-                android:background="@drawable/border"
-                android:padding="3dp"/>
+                tools:srcCompat="@tools:sample/avatars" />
 
             <TextView
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"
+                android:paddingTop="2dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="2dp"
                 android:text="name"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/profile_img"
-                android:background="@drawable/border"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="2dp"
-                android:paddingBottom="2dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/profile_img" />
 
 
             <TextView
                 android:id="@+id/gender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"
+                android:paddingTop="2dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="2dp"
                 android:text="gender"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/name"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/border"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="2dp"
-                android:paddingBottom="2dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/name" />
 
             <TextView
                 android:id="@+id/address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"
+                android:paddingTop="2dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="2dp"
                 android:text="address"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/gender"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/border"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="2dp"
-                android:paddingBottom="2dp" />
+                app:layout_constraintTop_toBottomOf="@+id/gender" />
 
             <TextView
                 android:id="@+id/email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"
+                android:paddingTop="2dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="2dp"
                 android:text="email"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/address"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/border"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="2dp"
-                android:paddingBottom="2dp" />
+                app:layout_constraintTop_toBottomOf="@+id/address" />
 
 
             <TextView
@@ -96,35 +113,52 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"
+                android:paddingTop="2dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="2dp"
                 android:text="Phone"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/email"
-                android:background="@drawable/border"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="2dp"
-                android:paddingBottom="2dp" />
+                app:layout_constraintTop_toBottomOf="@+id/email" />
 
             <TextView
                 android:id="@+id/dob"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="dob"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/phone"
                 android:layout_marginTop="20dp"
-                android:textSize="16sp"
-                android:textColor="#000000"
-                android:textAlignment="center"
                 android:background="@drawable/border"
                 android:paddingLeft="10dp"
-                android:paddingRight="10dp"
                 android:paddingTop="2dp"
-                android:paddingBottom="2dp"/>
+                android:paddingRight="10dp"
+                android:paddingBottom="2dp"
+                android:text="dob"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/solid_btn"
+                android:text="@string/Refresh"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dob"
+                android:layout_marginBottom="50dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
